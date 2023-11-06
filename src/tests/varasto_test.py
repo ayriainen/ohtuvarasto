@@ -11,7 +11,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_konstruktori_saldo_isompi(self):
-        #katsotaan voiko saldo olla isompi kuin tilavuus
+        #katsotaan voisiko saldo olla isompi kuin tilavuus
         varasto = Varasto(10, 11)
 
         self.assertAlmostEqual(varasto.saldo, 10)
