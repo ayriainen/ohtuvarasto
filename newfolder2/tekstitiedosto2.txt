@@ -1,1 +1,0 @@
-Teksti2 + lisäys + git add -p -testi
