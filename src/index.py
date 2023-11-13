@@ -12,7 +12,11 @@ def main():
     print(f"saldo = {olutta.saldo}")
     print(f"tilavuus = {olutta.tilavuus}")
     print(f"paljonko_mahtuu = {olutta.paljonko_mahtuu()}")
+    turha_eka_apu(mehua)
+    turha_toka_apu(mehua, olutta)
+    turha_kolmas_apu(mehua, olutta)
 
+def turha_eka_apu(mehua):
     print("Mehu setterit:")
     print("Lisätään 50.7")
     mehua.lisaa_varastoon(50.7)
@@ -26,6 +30,7 @@ def main():
     huono = Varasto(-100.0)
     print(huono)
 
+def turha_toka_apu(mehua, olutta):
     print("Varasto(100.0, -50.7)")
     huono = Varasto(100.0, -50.7)
     print(huono)
@@ -40,6 +45,7 @@ def main():
     mehua.lisaa_varastoon(-666.0)
     print(f"Mehuvarasto: {mehua}")
 
+def turha_kolmas_apu(mehua, olutta):
     print(f"Olutvarasto: {olutta}")
     print("olutta.ota_varastosta(1000.0)")
     saatiin = olutta.ota_varastosta(1000.0)
